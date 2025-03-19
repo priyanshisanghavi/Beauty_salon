@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+  }
+  
+  header.sticky{
+    background: #F18C8E;
+    padding: 15px 100px;
+    color: #fff;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .menu a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 0 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  
+  header .menu a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  header .btn{
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+ 
+.container{
+    width: 100%;
+}
+.container .cover{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/bg-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(252, 152, 169, 0.582);
+    background-blend-mode: darken ;
+}
+.container .cover h1{
+    font-size: 10vmin;
+    color: #fff;
+}
+ 
+.about{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.about .img-sec img{
+    width: 500px;
+    height: 90%;
+}
+.about .text-sec{
+    padding: 50px;
+}
+.about .text-sec h3{
+    font-size: 2.6vmin;
+    letter-spacing: 2px;
+    color: #F18C8E;
+    text-transform: uppercase;
+}
+.about .text-sec h1{
+    font-size: 5vmin;
+    padding: 20px 0;
+}
+.about .text-sec p{
+    font-size: 3vmin;
+    letter-spacing: 1px;
+    color: #9A9A9A;
+}
+
+ 
+.artist{
+    width: 100%;
+    height: 100vh;
+}
+.artist .text-section{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+.artist .text-section h3{
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    color: #F18C8E;
+    padding-bottom: 15px;
+}
+.artist .text-section h1{
+    font-size: 6vmin;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.artist .text-section p{
+    font-size: 2.8vmin;
+    color: #9A9A9A;
+}
+.img-sections{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.img-sections .inner{
+   width: 100%;
+   text-align: center;
+}
+.img-sections .inner img{
+    width: 250px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.img-sections .inner img:hover{
+   width: 280px;
+   transition: 1s;
+   border: 5px solid #F18C8E;
+}
+.img-sections .inner h1{
+    font-size: 3vmin;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.img-sections .inner h3{
+    font-size: 2.7vmin;
+    text-transform: uppercase;
+    color: #F18C8E;
+}
+ 
+.footer{
+    width: 100%;
+    height: 70vh;
+    background-color: #100B0F;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+.footer .all-sec{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer .all-sec .social,
+.footer .all-sec .information,
+.footer .all-sec .links,
+.footer .all-sec .qun{
+    width: 25%;
+}
+.footer .all-sec .social h1,
+.footer .all-sec .information h1,
+.footer .all-sec .links h1,
+.footer .all-sec .qun h1{
+    font-size: 3vmin;
+    color: #fff;
+    padding-bottom: 30px;
+}
+  
+.footer .all-sec .social p{
+    font-size: 2.5vmin;
+    text-align: justify;
+    padding: 0 30px 30px 0;
+    color: #dbd8da;
+}
+.footer .all-sec .social .icons{
+    font-size: 3.5vmin;
+    color: #fff;
+}
+.footer .all-sec .social .icons .fa-brands{
+    background-color: #1C171B;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+ 
+
+.footer .all-sec .information h2{
+    font-size: 3vmin;
+    padding: 15px 0;
+}
+.footer .all-sec .information h2 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #dbd8da;
+}
+
+ 
+.footer .all-sec .links ul{
+    list-style: none;
+}
+.footer .all-sec .links ul li{
+    padding: 15px 0;
+    font-size: 3vmin;
+}
+.footer .all-sec .links ul li a{
+    text-decoration: none;
+    color: #dbd8da;
+}
+
+.footer .unic{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3vmin;
+    color: #fff;
+}
+
+ 
+@media (max-width: 1060px){
+    header .btn{
+      display: block;
+    }
+  
+    header .menu{
+      position: fixed;
+      background: #F18C8E;
+      flex-direction: column;
+      min-width: 400px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+    }
+  
+    header .menu.active{
+      right: 0;
+    }
+  
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+  
+    header .menu a{
+      display: block;
+      font-size: 20px;
+      margin: 20px;
+      padding: 0 15px;
+    }
+  }
+
+@media screen and (max-width:950px) { 
+    .container .cover{
+        height: 40vh;
+    }
+    .about{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .about .img-sec img{
+        width: 100%;
+    }
+    .img-sections{
+        flex-wrap: wrap;
+    }
+    .img-sections .inner{
+        width: 50%;
+     }
+    .footer .all-sec{
+        flex-wrap: wrap;
+     }
+     .footer .all-sec .social,
+     .footer .all-sec .information,
+     .footer .all-sec .links,
+     .footer .all-sec .qun{
+         width: 50%;
+         align-items: center;
+     }
+}
+
+@media screen and (max-width:700px){
+    .footer{
+        width: 100%;
+        height: 100vh;
+    }
+    .footer .all-sec .social,
+    .footer .all-sec .information,
+    .footer .all-sec .links,
+    .footer .all-sec .qun{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .artist{
+        height: 150vh;
+    }
+    .img-sections .inner{
+        width: 100%;
+        padding: 20px;
+     }
+    .container .img img{
+        width: 100%;
+        max-width: 100%;
+    }  
+}
